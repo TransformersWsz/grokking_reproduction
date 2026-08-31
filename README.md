@@ -1,0 +1,1 @@
+Reproduce the grokking phenomenon described in [GROKKING: GENERALIZATION BEYOND OVERFITTING ON SMALL ALGORITHMIC DATASETS](https://arxiv.org/pdf/2201.02177)
