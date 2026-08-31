@@ -1,0 +1,13 @@
+{
+  "op": "div",
+  "p": 97,
+  "seed": 0,
+  "train_frac": 0.5,
+  "n_equations": 9312,
+  "n_train": 4656,
+  "n_val": 4656,
+  "files": [
+    "data/div_97_train.csv",
+    "data/div_97_val.csv"
+  ]
+}
