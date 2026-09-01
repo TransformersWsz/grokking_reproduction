@@ -101,7 +101,7 @@ $$
 
 红色这项就是 weight decay：**不看梯度，每一步都把权重朝原点等比例拽回一点**。权重越大拽得越狠，永远在场。
 
-**它怎么触发 grokking：** 训练 loss 归零后 $g_t \approx 0$ ，$m_t,v_t \to 0$ ，自适应项消失，更新只剩
+**它怎么触发 grokking：** 训练 loss 归零后 $g_t \approx 0$ ，$m_t \to 0$ ，自适应项消失，更新只剩
 
 $$
 \theta_t = (1 - \eta\lambda)\, \theta_{t-1}
