@@ -96,8 +96,6 @@ $$
 **AdamW** 只改了一处——在更新量后面多加一项 $\lambda\theta$：
 
 $$
-\theta_t = \theta_{t-1} - \eta \left( \frac{m_t}{\sqrt{v_t} + \epsilon} + \color{red}{\lambda\, \theta_{t-1}} \right) \\
-
 \theta_t = \theta_{t-1} - \eta \left( \frac{m_t}{\sqrt{v_t} + \epsilon} + {\color{red} \lambda, \theta_{t-1}} \right)
 $$
 
