@@ -79,7 +79,7 @@ python src/plot_acc.py --csv ./runs/div97_wd0.5_seed0/train_log.csv
 
 ## 附：从 Adam 到 AdamW，为什么wd影响grokking出现的时机？
 
-**Adam** 的每步更新长这样（$g_t$ 是当前梯度，$\eta$ 是学习率）：
+**Adam** 的每步更新长这样（$g_t$是当前梯度，$\eta$是学习率）：
 
 $$
 m_t = \beta_1 m_{t-1} + (1-\beta_1) g_t \qquad v_t = \beta_2 v_{t-1} + (1-\beta_2) g_t^2
