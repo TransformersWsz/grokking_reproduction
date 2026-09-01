@@ -96,7 +96,9 @@ $$
 **AdamW** 只改了一处——在更新量后面多加一项 $\lambda\theta$：
 
 $$
-\theta_t = \theta_{t-1} - \eta \left( \frac{m_t}{\sqrt{v_t} + \epsilon} + \color{red}{\lambda\, \theta_{t-1}} \right)
+\theta_t = \theta_{t-1} - \eta \left( \frac{m_t}{\sqrt{v_t} + \epsilon} + \color{red}{\lambda\, \theta_{t-1}} \right) \\
+
+\theta_t = \theta_{t-1} - \eta \left( \frac{m_t}{\sqrt{v_t} + \epsilon} + {\color{red} \lambda, \theta_{t-1}} \right)
 $$
 
 红色这项就是 weight decay：**不看梯度，每一步都把权重朝原点等比例拽回一点**。权重越大拽得越狠，永远在场。
